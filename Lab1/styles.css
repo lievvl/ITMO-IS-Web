@@ -1,0 +1,21 @@
+.header-flexbox {
+    display: flex;
+    justify-content: start;
+    background: lightgrey;
+}
+
+.hamburger-menu__btn {
+    visibility: hidden;
+}
+
+.header-title {
+    margin-inline: auto;
+}
+
+.footer {
+    background-color: lightgrey;
+}
+
+.cutted-info {
+    float: right;
+}
