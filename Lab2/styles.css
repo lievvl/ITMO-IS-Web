@@ -35,6 +35,10 @@ p, aside {
     text-transform: uppercase;
 }
 
+.titles-hamburgerbox {
+    font-style: italic;
+}
+
 p.text {
     color: #000000;
     font-family: 'Roboto', sans-serif;
