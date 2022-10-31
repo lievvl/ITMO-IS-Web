@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+    height: 100%;
+}
+
 ul {
     padding-left: 10px;
 }
@@ -15,6 +19,9 @@ p, aside {
 
 .wrapper {
     background-color: #EDD497;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .titles {
@@ -96,6 +103,21 @@ img.hover-cursor:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex: 1 0 auto;
+}
+
+@media screen and (max-width: 1016px) {
+    .container {
+        justify-content: center;
+    }
+    .aside {
+        max-width: 90% !important;
+        flex: none !important;
+    }
+    .main {
+        max-width: 90%; !important;
+        flex: none !important;
+    }
 }
 
 .main {
@@ -119,6 +141,7 @@ img.hover-cursor:hover {
 .footer {
     margin-top: 10px;
     background-color: #877451;
+    flex: 0 0 auto;
 }
 
 .cutted-info {
