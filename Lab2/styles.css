@@ -124,3 +124,16 @@ img.hover-cursor:hover {
 .cutted-info {
     float: right;
 }
+
+.button-img {
+    width:30px;
+    height: 30px;
+}
+
+.internal-button-img {
+    padding-left: 17px;
+}
+
+.main-container {
+    align-items:center;
+}
