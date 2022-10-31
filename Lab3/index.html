@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="Резюме,Макак на ву">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Резюме</title>
 </head>
 
 <body class="wrapper">
     <header class="header">
-        <div class="container" style="align-items:center;">
+        <div class="container main-container">
             <nav class="hamburger-menu">
                 <input class="hamburger-menu__btn" id="hamburger-menu__open" type="checkbox"/>
                 <label for="hamburger-menu__open">
-                    <img class="hover-cursor" style="width:30px; height: 30px;" src="./menu.svg"/>
+                    <img class="hover-cursor button-img" src="./menu.svg"/>
                 </label>
                 <div class="hamburger-menu__box">
                     <label for="hamburger-menu__open">
-                        <img class="hover-cursor" style="padding-left:17px; width:30px; height: 30px;" src="./close.svg" />
+                        <img class="hover-cursor button-img internal-button-img" src="./close.svg" />
                     </label>
                     <ul class="hamburger-menu__box-list">
                         <li>
-                            <a class="hamburger-menu__item titles" href="https://github.com/lievvl" target="_blank">
+                            <a class="hamburger-menu__item titles titles-hamburgerbox" href="https://github.com/lievvl" target="_blank">
                                 Мой Github
                             </a>
                         </li>
                         <li>
-                            <a class="hamburger-menu__item titles" href="./index.html">
+                            <a class="hamburger-menu__item titles titles-hamburgerbox" href="./index.html">
                                 Резюме
                             </a>
                         </li>
                         <li>
-                            <a class="hamburger-menu__item titles" href="./index.html">
+                            <a class="hamburger-menu__item titles titles-hamburgerbox" href="./table.html">
                                 Таблица для 3-ей лабы
                             </a>
                         </li>
@@ -110,7 +113,7 @@
     </main>
 
     <footer class="footer">
-        <div class="container" style="flex-direction: column">
+        <div class="container">
             <p> lox </p>
         </div>
     </footer>
