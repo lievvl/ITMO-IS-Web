@@ -17,6 +17,7 @@ p, aside {
     line-height: 2rem;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
+    word-spacing: normal;
 }
 
 .wrapper {
@@ -30,6 +31,7 @@ p, aside {
     font-weight: 600;
     text-decoration: none;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 p.text {
