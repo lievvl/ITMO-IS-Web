@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+html {
+    font-size: 15px;
+}
+
+p, aside {
+    margin-top: 10px;
+    text-indent: 20px;
+    line-height: 2rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: normal;
+}
+
+.wrapper {
+    background-color: #EDD497;
+}
+
+.titles {
+    color: #000000;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.titles-hamburgerbox {
+    font-style: italic;
+}
+
+p.text {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hamburger-menu__btn {
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+}
+
+#hamburger-menu__open:checked ~ .hamburger-menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.hamburger-menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+
+    width: 300px;
+    height: 100%;
+
+    margin: 0;
+    background-color: #90919E;
+
+    box-shadow: 10px 0px 8px #555;
+
+    transition-duration: .25s;
+}
+
+.hamburger-menu__box-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger-menu__item {
+    display: block;
+    padding: 20px 25px;
+
+    transition-duration: .25s;
+}
+
+img.hover-cursor:hover {
+    cursor: pointer;
+}
+
+.hamburger-menu__item:hover {
+    background-color: #5E5664;
+}
+
+
+
+
+.header-title {
+    margin-inline: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main {
+    flex: 0 0 66%;
+    max-width: 66%;
+    margin-top: 15px;
+}
+
+.aside {
+    flex: 0 0 34%;
+    max-width: 33%;
+    padding-left: 10px;
+}
+
+.header {
+    position: fixed;
+    width:100%;
+    background: #877451;
+}
+
+.footer {
+    margin-top: 10px;
+    background-color: #877451;
+}
+
+.cutted-info {
+    float: right;
+}
+
+.button-img {
+    width:30px;
+    height: 30px;
+}
+
+.internal-button-img {
+    padding-left: 17px;
+}
+
+.main-container {
+    align-items:center;
+}
