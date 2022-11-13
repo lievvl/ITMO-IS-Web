@@ -13,7 +13,10 @@
             document.getElementById("hamburger_menu_id").children[1].children[0].classList.add("hamburger-menu__onPage");
         }
         if (name == "table") {
-                document.getElementById("hamburger_menu_id").children[2].children[0].classList.add("hamburger-menu__onPage");
+            document.getElementById("hamburger_menu_id").children[2].children[0].classList.add("hamburger-menu__onPage");
+        }
+        if (name == "todoList") {
+            document.getElementById("hamburger_menu_id").children[3].children[0].classList.add("hamburger-menu__onPage");
         }
     }
 })();
