@@ -5,6 +5,7 @@
   <meta name="keywords" content="Резюме,Макак на ву">
   <link rel="stylesheet" href="styles.css">
   <script src="SpeedScript.js"></script>
+  <script src="TodoScript.js"></script>
   <title>Резюме</title>
 </head>
 
@@ -55,43 +56,11 @@
 
 <main class="container">
   <section class="main" style="max-width: 100%; flex: 0 0 100%;">
-    <table border="1">
-      <tr>
-        <td>&nbsp;</td>
-        <td>Понедельник</td><td>Вторник</td><td>Среда</td>
-        <td>Четверг</td><td>Пятница</td><td>Суббота</td>
-      </tr>
-      <tr>
-        <td>8:20</td>
-        <td></td><td></td><td></td>
-        <td>Англ</td><td></td><td></td>
-      </tr>
-      <tr>
-        <td>10:00</td>
-        <td>Веб</td><td></td><td></td>
-        <td></td><td>Dev-opsы <3</td><td>Примат</td>
-      </tr>
-      <tr>
-        <td>11:40</td>
-        <td>ML</td><td></td><td></td>
-        <td></td><td>Графика</td><td>Примат</td>
-      </tr>
-      <tr>
-        <td>13:30</td>
-        <td>Вебпрак</td><td></td><td>Awin прак</td>
-        <td></td><td></td><td></td>
-      </tr>
-      <tr>
-        <td>15:20</td>
-        <td>Вебпрак</td><td></td><td>Awin прак</td>
-        <td></td><td></td><td></td>
-      </tr>
-      <tr>
-        <td>17:00</td>
-        <td></td><td></td><td></td>
-        <td></td><td></td><td></td>
-      </tr>
-    </table>
+    <p class="titles"> Todo List </p>
+    <input id="todo_input">
+    <button onclick="addItem()"> Add </button>
+      <ul id="todo_list">
+      </ul>
   </section>
 </main>
 
