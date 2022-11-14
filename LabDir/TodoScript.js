@@ -5,11 +5,11 @@ var globalList = {};
     if (localStorage.hasOwnProperty("TodoList"))
     {
         globalList = JSON.parse(localStorage.getItem("TodoList"));
-        window.onload = function () {
+        window.addEventListener("load", function (){
             for (let key in globalList) {
                 addItemToDOM(globalList[key]);
             }
-        }
+        })
     }
 })();
 
