@@ -1,11 +1,14 @@
-var globalList = {};
+var globalList = [];
+var card;
 
-(function () {
-    console.log(localStorage.hasOwnProperty("TodoList"))
-    if (localStorage.hasOwnProperty("TodoList"))
-    {
+(async function () {
+    let templates = document.createElement('template');
+    templates.innerHTML = await (await fetch('template.html')).text();
+    let tmp = templates.content.querySelector( '#t1' );
+    card = tmp.content.querySelector("div");
+    if (localStorage.hasOwnProperty("TodoList")) {
         globalList = JSON.parse(localStorage.getItem("TodoList"));
-        window.addEventListener("load", function (){
+        window.addEventListener("load", function () {
             for (let key in globalList) {
                 addItemToDOM(globalList[key]);
             }
@@ -15,16 +18,40 @@ var globalList = {};
 
 function addItem() {
     let input = document.getElementById("todo_input");
-    addItemToDOM(input.value);
-    let key = Object.keys(globalList).length + 1;
-    globalList[key] = input.value;
-    console.log(globalList);
+    if (input.value === "") {
+        return;
+    }
+    let id = 0
+    if (globalList.length !== 0) {
+        id = globalList[globalList.length - 1].id + 1;
+    }
+    let item = {
+        id: id,
+        value: input.value,
+        state: false
+    }
+    addItemToDOM(item);
+    globalList.push(item);
     localStorage.setItem("TodoList", JSON.stringify(globalList));
+    input.value = "";
 }
 
-function addItemToDOM(value) {
+function addItemToDOM(item) {
     let list = document.getElementById("todo_list");
-    let tag = document.createElement("li");
-    tag.textContent = value;
+    let tag = card.cloneNode(true);
+    tag.querySelector('#t1_text').textContent = item.value;
+    let checkbox = tag.querySelector('#t1_checkbox');
+    checkbox.checked = item.state;
+    checkbox.attributes[2].value = item.id
     list.append(tag);
+}
+
+function changedState(node) {
+    for (let i in globalList) {
+        if (globalList[i].id === parseInt(node.attributes[2].value)) {
+            globalList[i].state = node.checked;
+            break;
+        }
+    }
+    localStorage.setItem("TodoList", JSON.stringify(globalList));
 }
