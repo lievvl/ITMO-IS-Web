@@ -66,6 +66,10 @@ p.text {
     left: 0;
 }
 
+.hamburger-menu__onPage {
+    text-decoration: underline;
+}
+
 .hamburger-menu__box {
     display: block;
     position: fixed;
