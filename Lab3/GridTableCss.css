@@ -1,0 +1,55 @@
+html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+    "S M";
+}
+
+.container * {
+    border: 1px dashed black;
+}
+
+.Sidebar {
+    grid-area: S;
+}
+
+.Main {
+    display: grid;
+    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-areas:
+    "H"
+    "C"
+    "F";
+    grid-area: M;
+}
+
+.Header {
+    grid-area: H;
+}
+
+.Content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    ". . .";
+    grid-area: C;
+}
+
+.Footer {
+    grid-area: F;
+}
+
+
+
+.galleryTable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

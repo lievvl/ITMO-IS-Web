@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Резюме,Макак на ву">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Резюме</title>
+</head>
+
+<body class="wrapper">
+    <header class="header">
+        <div class="container main-container">
+            <nav class="hamburger-menu">
+                <input class="hamburger-menu__btn" id="hamburger-menu__open" type="checkbox"/>
+                <label for="hamburger-menu__open">
+                    <img class="hover-cursor button-img" src="./menu.svg"/>
+                </label>
+                <div class="hamburger-menu__box">
+                    <label for="hamburger-menu__open">
+                        <img class="hover-cursor button-img internal-button-img" src="./close.svg" />
+                    </label>
+                    <ul class="hamburger-menu__box-list">
+                        <li>
+                            <a class="hamburger-menu__item titles titles-hamburgerbox" href="https://github.com/lievvl" target="_blank">
+                                Мой Github
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hamburger-menu__item titles titles-hamburgerbox" href="./index.html">
+                                Резюме
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hamburger-menu__item titles titles-hamburgerbox" href="./table.html">
+                                Таблица для 3-ей лабы
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="header-title">
+                <p class="titles"> Резюме </p>
+            </div>
+        </div>
+    </header>
+
+    <div style="padding:24px"></div>
+
+    <main class="container">
+        <section class="aside">
+            <div>
+                <img src="gigachad.jpg">
+                <p> Абсолютно точно моё фото </p>
+                <div>
+                    <ul>
+                        <li> Дата рождения: <time>14.11.2001</time></li>
+                        <li> Образование: Университет ИТМО, ИС</li>
+                        <li> Опыт работы: 3 месяца </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="main">
+            <h1 class="titles"> Резюме </h1>
+            <article>
+                <p>
+                    <h3> Профессиональные навыки: </h3>
+                    <ul>
+                        <li> Опыт работы с Javascript, HTML, PHP </li>
+                        <li> Знание C#, Java </li>
+                        <li> Разработка фронтэнда на фреймворке <strong>Vue.js</strong> </li>
+                        <li> Разработка бэкэнда на фреймворке Laravel </li>
+                        <li> Умение писать юнит и приемочные тесты </li>
+                        <li> Запихнул кафку в докер и вроде даже слушается</li>
+                    </ul>
+                </p>
+
+                <p>
+                    <h3> Реализованные проекты </h3>
+                    <ul>
+                        <li> Участвовал в разработке облачной файловой системы, с возможностью интегрирования в AdobeIllustrator </li>
+                        <li> Разработал систему отслеживания заказов для предприятия, с возможностью чтения и загрузки данных в базу 1C </li>
+                        <li> Работал над авторизацией пользователей через jwt-токен </li>
+                    </ul>
+                </p>
+            </article>
+            <aside>
+                <h3> Обо мне </h3>
+                <p> Умение работать в режиме многозадачности и высокие аналитические способности позволяют мне эффективно работать с
+                    большими объёмами информации, быстро находить качественные решения сложных задач. </p>
+                <i> Формула жизненного успеха: </i>
+                <cite> "Just unga harder" </cite>
+                <br>
+                <strong> Закон Джоуля-Ленца: dA = I<sup>2</sup>*R*dt</strong>
+            </aside>
+            <aside>
+                <h3> Блок кода и графики для лабы </h3>
+                <pre><code>
+        console.log('Как же я *люблю* css')
+                </code></pre>
+                <pre>          ___
+        {~._.~}
+         ( Y )
+        ()~*~()
+        (_)-(_)
+                </pre>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p> lox </p>
+        </div>
+    </footer>
+</body>
+
+</html>
