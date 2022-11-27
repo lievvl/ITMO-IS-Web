@@ -1,14 +1,14 @@
-var globalList = [];
-var card;
+let globalList = [];
+let card;
 
 (async function () {
-    let templates = document.createElement('template');
-    templates.innerHTML = await (await fetch('template.html')).text();
-    let tmp = templates.content.querySelector( '#t1' );
-    card = tmp.content.querySelector("div");
     if (localStorage.hasOwnProperty("TodoList")) {
         globalList = JSON.parse(localStorage.getItem("TodoList"));
-        window.addEventListener("load", function () {
+        window.addEventListener("load", async function () {
+            let templates = document.createElement('template');
+            templates.innerHTML = await (await fetch('template.html')).text();
+            let tmp = templates.content.querySelector( '#t1' );
+            card = tmp.content.querySelector("div");
             for (let key in globalList) {
                 addItemToDOM(globalList[key]);
             }
