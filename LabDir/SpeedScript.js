@@ -23,8 +23,7 @@
                 a: a
             });
         }
-        console.log(ar);
-        console.log(document.getElementById("hamburger_menu_id").children[2].children[0].attributes[1].nodeValue);
+
         for (i = 0; i < ar.length; i++)
         {
             if (ar[i].filename == name) {

@@ -7,46 +7,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://labs.rampinteractive.co.uk/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <script src="./node_modules/slide-and-swipe-menu/jquery.slideandswipe.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('nav').slideAndSwipe();
+        });
+    </script>
+
     <script src="SpeedScript.js"></script>
     <title>Резюме</title>
 </head>
 
 <body class="wrapper">
-    <header class="header">
-        <div class="container main-container">
-            <nav class="hamburger-menu">
-                <input class="hamburger-menu__btn" id="hamburger-menu__open" type="checkbox"/>
-                <label for="hamburger-menu__open">
-                    <img class="hover-cursor button-img" src="./menu.svg"/>
-                </label>
-                <div class="hamburger-menu__box">
-                    <label for="hamburger-menu__open">
-                        <img class="hover-cursor button-img internal-button-img" src="./close.svg" />
-                    </label>
-                    <ul class="hamburger-menu__box-list" id="hamburger_menu_id">
-                        <li>
-                            <a class="hamburger-menu__item titles titles-hamburgerbox" href="https://github.com/lievvl" target="_blank">
-                                <p> Мой Github </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="hamburger-menu__item titles titles-hamburgerbox" href="./index.html">
-                                <p> Резюме </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="hamburger-menu__item titles titles-hamburgerbox" href="./table.html">
-                                <p> Таблица для 3-ей лабы </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="hamburger-menu__item titles titles-hamburgerbox" href="./todoList.html">
-                                <p> Todo list </p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <<header class="header">
+        <div class="container" style="align-items:center;">
+            <nav id="nav">
+                <ul class="hamburger-menu__box-list" id="hamburger_menu_id">
+                    <li>
+                        <a class="hamburger-menu__item titles titles-hamburgerbox" href="https://github.com/lievvl" target="_blank">
+                            <p> Мой Github </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hamburger-menu__item titles titles-hamburgerbox" href="./index.html">
+                            <p> Резюме </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hamburger-menu__item titles titles-hamburgerbox" href="./table.html">
+                            <p> Таблица для 3-ей лабы </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hamburger-menu__item titles titles-hamburgerbox" href="./todoList.html">
+                            <p> Todo list </p>
+                        </a>
+                    </li>
+                </ul>
             </nav>
+            <main>
+                <img class="ssm-toggle-nav hover-cursor button-img internal-button-img" href="#" src="./Hamburger_icon.svg" />
+            </main>
+            <div class="ssm-overlay ssm-toggle-nav"></div>
 
             <div class="header-title">
                 <p class="titles"> Резюме </p>

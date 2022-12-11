@@ -43,7 +43,7 @@ function sleep(ms) {
 }
 
 function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
+    return Math.floor(Math.random() * (max - 1)) + 1;
 }
 
 function addItem() {
