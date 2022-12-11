@@ -5,7 +5,6 @@
   <meta name="keywords" content="Резюме,Макак на ву">
   <link rel="stylesheet" href="styles.css">
   <script src="SpeedScript.js"></script>
-  <script src="TodoScript.js"></script>
   <script src="FetchScript.js"></script>
   <title>Резюме</title>
 </head>
@@ -54,16 +53,19 @@
 </header>
 
 <div style="padding:24px"></div>
-
 <main class="container" style="justify-content: center;">
   <section class="main" style="max-width: 90%; flex: 0 0 100%;">
     <p class="titles"> Todo List </p>
-    <form onsubmit="return false">
-      <input id="todo_input">
-      <button onclick="addItem()"> Add </button>
-    </form>
-      <ul id="todo_list">
-      </ul>
+    <img id="slowpoke" src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves"  width="250" />
+    <p hidden id="error"> Something gone wrong... </p>
+    <div hidden id="todo_div">
+      <form onsubmit="return false">
+        <input id="todo_input">
+        <button onclick="addItem()"> Add </button>
+      </form>
+        <ul id="todo_list">
+        </ul>
+    </div>
   </section>
 </main>
 
