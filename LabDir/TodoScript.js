@@ -14,6 +14,10 @@ let card;
             }
         })
     }
+    let templates = document.createElement('template');
+    templates.innerHTML = await (await fetch('template.html')).text();
+    let tmp = templates.content.querySelector( '#t1' );
+    card = tmp.content.querySelector("div");
 })();
 
 function addItem() {
