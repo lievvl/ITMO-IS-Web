@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="SpeedScript.js"></script>
     <title>Резюме</title>
 </head>
 
@@ -22,20 +23,25 @@
                     <label for="hamburger-menu__open">
                         <img class="hover-cursor button-img internal-button-img" src="./close.svg" />
                     </label>
-                    <ul class="hamburger-menu__box-list">
+                    <ul class="hamburger-menu__box-list" id="hamburger_menu_id">
                         <li>
                             <a class="hamburger-menu__item titles titles-hamburgerbox" href="https://github.com/lievvl" target="_blank">
-                                Мой Github
+                                <p> Мой Github </p>
                             </a>
                         </li>
                         <li>
                             <a class="hamburger-menu__item titles titles-hamburgerbox" href="./index.html">
-                                Резюме
+                                <p> Резюме </p>
                             </a>
                         </li>
                         <li>
                             <a class="hamburger-menu__item titles titles-hamburgerbox" href="./table.html">
-                                Таблица для 3-ей лабы
+                                <p> Таблица для 3-ей лабы </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hamburger-menu__item titles titles-hamburgerbox" href="./todoList.html">
+                                <p> Todo list </p>
                             </a>
                         </li>
                     </ul>
@@ -113,8 +119,7 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p> lox </p>
+        <div class="container" id="footer_container">
         </div>
     </footer>
 </body>
