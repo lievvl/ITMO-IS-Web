@@ -17,6 +17,7 @@
 
   <script src="MenuScript.js"></script>
   <script src="SpeedScript.js"></script>
+  <script src="FetchScript.js"></script>
   <title>Резюме</title>
 </head>
 
@@ -59,46 +60,19 @@
 </header>
 
 <div style="padding:24px"></div>
-
-<main class="container">
-  <section class="main" style="max-width: 100%; flex: 0 0 100%;">
-    <table border="1">
-      <tr>
-        <td>&nbsp;</td>
-        <td>Понедельник</td><td>Вторник</td><td>Среда</td>
-        <td>Четверг</td><td>Пятница</td><td>Суббота</td>
-      </tr>
-      <tr>
-        <td>8:20</td>
-        <td></td><td></td><td></td>
-        <td>Англ</td><td></td><td></td>
-      </tr>
-      <tr>
-        <td>10:00</td>
-        <td>Веб</td><td></td><td></td>
-        <td></td><td>Dev-opsы <3</td><td>Примат</td>
-      </tr>
-      <tr>
-        <td>11:40</td>
-        <td>ML</td><td></td><td></td>
-        <td></td><td>Графика</td><td>Примат</td>
-      </tr>
-      <tr>
-        <td>13:30</td>
-        <td>Вебпрак</td><td></td><td>Awin прак</td>
-        <td></td><td></td><td></td>
-      </tr>
-      <tr>
-        <td>15:20</td>
-        <td>Вебпрак</td><td></td><td>Awin прак</td>
-        <td></td><td></td><td></td>
-      </tr>
-      <tr>
-        <td>17:00</td>
-        <td></td><td></td><td></td>
-        <td></td><td></td><td></td>
-      </tr>
-    </table>
+<main class="container" style="justify-content: center;">
+  <section class="main" style="max-width: 90%; flex: 0 0 100%;">
+    <p class="titles"> Todo List </p>
+    <img id="slowpoke" src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves"  width="250" />
+    <p hidden id="error"> Something gone wrong... </p>
+    <div hidden id="todo_div">
+      <form onsubmit="return false">
+        <input id="todo_input">
+        <button onclick="addItem()"> Add </button>
+      </form>
+        <ul id="todo_list">
+        </ul>
+    </div>
   </section>
 </main>
 
